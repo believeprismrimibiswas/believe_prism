@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Believe Prism | Global Creative Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37; 
+            --black: #0D0D0D;
+            --white: #FFFFFF;
+            --gray: #1A1A1A;
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--black); color: var(--white); scroll-behavior: smooth; }
+        
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(13, 13, 13, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+        .logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--gold); letter-spacing: 2px; font-weight: bold; }
+        .nav-links a { color: var(--white); text-decoration: none; margin-left: 30px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+        .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 5rem; color: var(--gold); margin: 0; }
+        .hero-text p { font-size: 1.2rem; letter-spacing: 3px; color: #ccc; margin-top: 10px; }
+
+        /* Section Styling */
+        section { padding: 100px 10%; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--gold); text-align: center; margin-bottom: 60px; }
+
+        /* Services Section (Page 2) */
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .service-card { background: var(--gray); padding: 40px; border: 1px solid #222; transition: 0.4s; text-align: center; }
+        .service-card:hover { border-color: var(--gold); transform: translateY(-10px); }
+        .service-card img { width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; border-radius: 5px; }
+        .service-card h3 { color: var(--gold); margin-bottom: 15px; }
+
+        /* Portfolio Gallery (Page 3) */
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+        .gallery-item { height: 350px; overflow: hidden; border: 1px solid #333; position: relative; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; filter: grayscale(80%); }
+        .gallery-item:hover img { transform: scale(1.1); filter: grayscale(0%); }
+
+        /* Contact Section (Page 4) */
+        .contact-container { display: flex; gap: 50px; background: var(--gray); padding: 50px; border-radius: 10px; }
+        .contact-info { flex: 1; }
+        .contact-info h3 { color: var(--gold); font-size: 2rem; }
+        .contact-details p { margin: 15px 0; font-size: 1.1rem; color: #ccc; }
+        .contact-form { flex: 1; display: flex; flex-direction: column; gap: 15px; }
+        .contact-form input, .contact-form textarea { background: #000; border: 1px solid #333; padding: 15px; color: white; width: 100%; }
+
+        .btn { border: 2px solid var(--gold); color: var(--gold); padding: 15px 35px; text-decoration: none; font-weight: bold; transition: 0.3s; display: inline-block; cursor: pointer; background: transparent; }
+        .btn:hover { background: var(--gold); color: black; }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; font-size: 0.8rem; color: #555; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">BELIEVE PRISM</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#work">Our Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p>ESTABLISHED 2011</p>
+            <h1>Believe Prism</h1>
+            <p>High-End Design & Creative Direction</p><br>
+            <a href="#contact" class="btn">START A PROJECT</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">Professional Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=60" alt="Branding">
+                <h3>Brand Identity</h3>
+                <p>Developing cohesive visual languages, logos, and typography that define your market presence.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=500&q=60" alt="Direction">
+                <h3>Creative Direction</h3>
+                <p>13+ years of experience leading visual strategy for giants like Social Samosa and Real Estate firms.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e5381a382?auto=format&fit=crop&w=500&q=60" alt="Digital">
+                <h3>Digital Storytelling</h3>
+                <p>Creating high-impact social media assets and marketing collateral that convert viewers into clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" style="background: #080808;">
+        <h2 class="section-title">Selected Portfolio</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=60" alt="Work 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?auto=format&fit=crop&w=500&q=60" alt="Work 2"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=500&q=60" alt="Work 3"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=500&q=60" alt="Work 4"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=500&q=60" alt="Work 5"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=500&q=60" alt="Work 6"></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div style="display: flex; align-items: center; gap: 60px;">
+            <div style="flex: 1; border: 10px solid var(--gold); height: 550px; overflow: hidden;">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Rimi Biswas" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div style="flex: 1;">
+                <h2 style="color: var(--gold); font-size: 3rem; font-family: 'Playfair Display', serif;">The Visionary</h2>
+                <p style="font-size: 1.2rem; line-height: 1.8;"><strong>Rimi Biswas</strong> is a seasoned Creative Professional with a legacy spanning over 13 years. Her career is a testament to the power of visual storytelling, having held leadership roles at <strong>Janak Real Estate</strong> and key positions at <strong>Social Samosa</strong>.</p>
+                <p>Through <em>Believe Prism</em>, she offers a strategic approach to design that combines technical mastery in Adobe Creative Suite with a deep understanding of market psychology.</p>
+                <a href="#contact" class="btn">READ FULL BIO</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: #050505;">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Create Together</h3>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> gdrimibiswas@gmail.com</p>
+                    <p><strong>Location:</strong> Mumbai, Maharashtra, India</p>
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/rimi-biswas</p>
+                    <p><strong>Availability:</strong> Open for Creative Direction & Branding Projects</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea rows="5" placeholder="Tell us about your project"></textarea>
+                <button type="submit" class="btn">SEND INQUIRY</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 BELIEVE PRISM | ALL RIGHTS RESERVED | DESIGNED BY AI
+    </footer>
+
+</body>
+</html>
